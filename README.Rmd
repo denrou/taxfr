@@ -1,0 +1,38 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# taxfr
+
+The goal of taxfr is to provide a dataset of French taxes and revenus in a tidy format.
+
+## Installation
+
+You can install the released version of taxfr from [git](https://github.com/denrou/taxfr) with:
+
+```{r, eval=FALSE}
+remotes::install_github("denrou/taxfr")
+```
+
+## Dataset
+
+The dataset can be imported with:
+
+```{r}
+data(tax)
+tibble::glimpse(tax)
+```
+
+## Source
+
+Raw data can be found on the French Government website: https://www.impots.gouv.fr/portail/statistiques under `Base de données` -> `Impôt sur le revenu par commune (IRCOM)`

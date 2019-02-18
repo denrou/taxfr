@@ -1,0 +1,21 @@
+#' French Taxes Dataset
+#'
+#' A dataset containing the amount of taxes collected and the number of ratepayer in all French town from 2011 to 2017.
+#' Data are grouped by revenue.
+#'
+#' @format A tibble with 2,794,890 observations and 9 variables:
+#' \describe{
+#'   \item{code_insee}{INSEE unique identification per town}
+#'   \item{departement}{Name of the town}
+#'   \item{revenu_fiscal_de_reference_par_tranche_en_euros}{Groups of tax revenue, in euros}
+#'   \item{impot_net_total}{Total net tax}
+#'   \item{annee}{Year of collect}
+#'   \item{annee_revenu}{Year of revenue, equal to year of collect previous one}
+#'   \item{type}{Groups of taxpayer}
+#'   \item{nombre}{Number of people in the group of tax revenue}
+#'   \item{revenu}{Sum of revenues of people in the group of tax revenue}
+#' }
+#'
+#' @source https://www.impots.gouv.fr/portail/statistiques
+#'
+"tax"

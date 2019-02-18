@@ -1,0 +1,21 @@
+Package: taxfr
+Title: French Tax Dataset
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Denis",
+           family = "Roussel",
+           role = c("aut", "cre"),
+           email = "denis.roussel@datapole.com")
+Description: This package provide a tax dataset from 2011 to 2017.
+License: MIT + file LICENSE
+Suggests: 
+    dplyr,
+    glue,
+    purrr,
+    readxl,
+    janitor,
+    fodr,
+    tidyr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
